@@ -2,7 +2,7 @@
 name: heroku-docker-dotnet CD
 
 on:
-  [workflow_dispatch]
+  workflow_dispatch:
   pull_request:
     branches: [ main ]
     
