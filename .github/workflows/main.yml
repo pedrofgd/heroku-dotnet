@@ -10,7 +10,7 @@ on:
 #set environment variables 
 env:
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-  APP_NAME: ${{ 'heroku-docker-dotnet-app' }}
+  APP_NAME: ${{ 'a0-heroku' }}
 
 jobs:
       
