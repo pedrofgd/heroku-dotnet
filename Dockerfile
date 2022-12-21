@@ -17,4 +17,4 @@ RUN dotnet publish "heroku.csproj" -c Release -o /app/publish /p:UseAppHost=fals
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "heroku.dll"]
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet dotnet-docker-heroku.dll
